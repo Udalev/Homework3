@@ -83,6 +83,30 @@ public class Main {
         System.out.println ();
         System.out.println("Задача 7");
 
+        int weight = 7;
+        float lossInDayMin = (float) 250 / 1000;
+        float daysUntilGoalsMin = (int) (weight / lossInDayMin);
+        System.out.println("Что бы добиться результата при 250гр потребуется" + daysUntilGoalsMin + " дней" );
+
+        float lossInDayMax = (float) 500 / 1000;
+        float daysUntilGoalsMax = (int) (weight / lossInDayMax);
+        System.out.println("Что бы добиться результата при 500гр потребуется" + daysUntilGoalsMax + " дней" );
+
+        float average = (int) (daysUntilGoalsMin+daysUntilGoalsMax) / 2;
+        System.out.println("Среднее количество " + average + " дней");
+
+        System.out.println ();
+        System.out.println("Задача 8");
+
+        int percent = 10;
+        int salaryMaria = 67760, salaryDenys = 83690, salaryKristina = 76230;
+        int newsalaryMaria = (salaryMaria +(salaryMaria * percent / 100));
+        int newsalaryDenys = (salaryDenys +(salaryDenys * percent / 100));
+        int newsalaryKristina = (salaryKristina +(salaryKristina * percent / 100));
+        System.out.println("Маша теперь получает " + newsalaryMaria + "рублей." + " Годовой доход вырос на " + (newsalaryMaria * 12) + " рублей");
+        System.out.println("Денис теперь получает " + newsalaryDenys + "рублей." + " Годовой доход вырос на " + (newsalaryDenys * 12) + " рублей");
+        System.out.println("Кристина теперь получает " + newsalaryKristina + "рублей." + " Годовой доход вырос на " + (newsalaryKristina * 12) + " рублей");
+
 
 
 
